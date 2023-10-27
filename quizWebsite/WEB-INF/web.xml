@@ -1,0 +1,38 @@
+<web-app>
+    <!-- <servlet>
+        <servlet-name>requestDispatcher</servlet-name>
+        <servlet-class>RequestDispatcherExample</servlet-class>
+    </servlet> -->
+
+
+    <!-- <servlet>
+        <servlet-name>SendRedirect</servlet-name>
+        <servlet-class>SendRedirectExample</servlet-class>
+    </servlet> -->
+    <servlet>
+        <servlet-name>quiz</servlet-name>
+        <servlet-class>QuizServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServeJSFileServlet</servlet-name>
+        <servlet-class>JsServe</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServeJSFileServlet</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+    <!-- 
+    <servlet-mapping>
+        <servlet-name>requestDispatcher</servlet-name>
+        <url-pattern>/rD</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SendRedirect</servlet-name>
+        <url-pattern>/sR</url-pattern>
+    </servlet-mapping> -->
+    <servlet-mapping>
+        <servlet-name>quiz</servlet-name>
+        <url-pattern>/quiz</url-pattern>
+    </servlet-mapping>
+</web-app>
